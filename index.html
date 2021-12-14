@@ -15,24 +15,199 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
     <title>CV-RSSchool</title>
+    <link rel="icon" href="../assets/img/favicon-32x32.png" />
   </head>
   <body>
     <div class="container">
-      <header class="main-header">
-        <img src="" alt="Photo" />
-        <sections class="contacts"></sections>
-        <sections class="skills tech-skills"></sections>
-        <sections class="skills soft-skills"></sections>
-        <sections class="languages"></sections>
-        <sections class="widget"></sections>
-        <sections class="hobbies"></sections>
-      </header>
-      <aside class="left-side"></aside>
+      <aside class="left-side">
+        <img src="../assets/img/photo.jpg" alt="Photo" />
+        <sections class="contacts" id="contacts">
+          <h2 class="contacts-title">Contacts</h2>
+          <ul class="contact-list">
+            <li class="contact-item">
+              Phone:<a href="tel:+48 516 416 511" class="contacts-link"
+                >+48 516 416 511</a
+              >
+            </li>
+            <li class="contact-item">
+              E-mail:<a href="mailto:shat.rom07@gmail.com" class="contacts-link"
+                >shat.rom07@gmail.com</a
+              >
+            </li>
+            <li class="contact-item">
+              GitHub:<a href="https://github.com/googray" class="contacts-link"
+                >https://github.com/googray</a
+              >
+            </li>
+          </ul>
+        </sections>
+        <sections class="skills tech-skills" id="skills">
+          <h2 class="skills-title">Tech skills</h2>
+          <h3 class="skills-title__info">Hard Skills</h3>
+          <ul class="skills-list">
+            <li class="skills-item__techno">I'm use technologies as</li>
+            <li class="skills-item">HTML</li>
+            <li class="skills-item">CSS / SCSS</li>
+            <li class="skills-item">JavaScript</li>
+            <li class="skills-item">Bootstrap</li>
+            <li class="skills-item">Git</li>
+            <li class="skills-item">Figma</li>
+          </ul>
+        </sections>
+        <sections class="skills soft-skills">
+          <h3 class="skills-title__info">Soft skills</h3>
+          <ul class="skills-list">
+            <li class="skills-item">Communicative</li>
+            <li class="skills-item">Teamwork</li>
+            <li class="skills-item">Time management</li>
+            <li class="skills-item">Responsibility</li>
+            <li class="skills-item">Timeliness</li>
+          </ul>
+        </sections>
+        <sections class="languages" id="language">
+          <h3 class="languages-title">Languages</h3>
+          <ul class="languages-list">
+            <li class="languages-item">Russian - C2</li>
+            <li class="languages-item">Ukrainian - C2</li>
+            <li class="languages-item">Polish - C1</li>
+            <li class="languages-item">English - B2</li>
+          </ul>
+        </sections>
+        <sections class="widget">
+          <a
+            class="widget-link"
+            href="https://github.com/googray/rsschool-cv/blob/rsschool-cv-html/RS_resume.pdf"
+            download
+            >Download Resume</a
+          >
+        </sections>
+        <sections class="hobbies">
+          <h3 class="hobbies-title">Hobbies</h3>
+          <ul class="hobbies-list">
+            <li class="hobbies-item">Sailing instructor</li>
+            <li class="hobbies-item">Scuba diving</li>
+          </ul>
+        </sections>
+      </aside>
       <main class="right-side">
-        <section class="bio"></section>
-        <section class="projects"></section>
-        <section class="jobs"></section>
-        <section class="education"></section>
+        <header class="main-header">
+          <nav>
+            <ul class="main-header__links">
+              <li class="main-footer__link">
+                <a href="#bio" class="header link">Summary</a>
+              </li>
+              <li class="main-footer__link">
+                <a href="#projects" class="header link"></a>Projects
+              </li>
+              <li class="main-footer__link">
+                <a href="#jobs" class="header link"></a>Jobs
+              </li>
+              <li class="main-footer__link">
+                <a href="#education" class="header link"></a>Education
+              </li>
+              <li class="main-footer__link">
+                <a href="#contacts" class="header link"></a>Contacts
+              </li>
+              <li class="main-footer__link">
+                <a href="#skills" class="header link"></a>Skills
+              </li>
+              <li class="main-footer__link">
+                <a href="#language" class="header link"></a>Languages
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <section class="bio" id="bio">
+          <h1 class="bio-title">Roman Shatrov</h1>
+          <p class="bio-occupation">Junior Frontend Developer</p>
+          <p class="bio-about">
+            My professional goal is to work as a Frontend Developer. My aim to
+            work in the IT sector , I need constantly development and obtaining
+            an experience, that will stay with me for life. I am currently
+            actively continuing to explore new technologies based on HTML,
+            CSS/SASS, JavaScript. And I want to evolve constantly in frontend
+            technologies, new frameworks and other IT technologies. I realised
+            that have some lacks on practical knowledge and experience on the
+            projects. That is why I am looking for a crew, for whom I will be a
+            useful team member and can develops with their.
+          </p>
+        </section>
+        <section class="projects" id="projects">
+          <h2 class="projects-title">Projects</h2>
+          <ol>
+            <li>
+              <a
+                href="https://simply-piggie-game.netlify.app/"
+                class="projects-link"
+              >
+                Piggie_Game
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://web-bankist-page.netlify.app"
+                class="projects-link"
+              >
+                Web_Bankist
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://bankist-app-starter.netlify.app"
+                class="projects-link"
+              >
+                Bankist_App_Starter
+              </a>
+            </li>
+            <li>
+              <a href="https://map-tur-app.netlify.app" class="projects-link">
+                Map_ty
+              </a>
+            </li>
+        </section>
+        <section class="jobs" id="jobs">
+            <h2 class="jobs-title">Employment history</h2>
+            <h3 class="jobs-occupation"> Junior - <span class="accent">Magnetic Point</span></h3>
+            <p class="jobs-time">January 2021 - April 2021</p>
+            <ul class="experience">
+                <li class="experience-item">Cutting graphic templates from PSD to HTML</li>
+            </ul>
+            <h3 class="jobs-occupation"> Project Manager - <span class="accent">REMONTOWA Electrical Solutions</span></h3>
+            <p class="jobs-time">2018 - 2021</p>
+            <ul class="experience">
+                <li class="experience-item">Manage clients projects. Production, delivery, installation of
+                    electrical solutions for onshore/offshore market segment.</li>
+            </ul>
+            <h3 class="jobs-occupation">
+                Export Sales Manager, Sales Manager, Business Development Manager -
+                <span class="accent"> ABB, GE, Schneider Electric, ets...</span>
+              </h3>
+              <!-- <p class="jobs-time"></p> -->
+              <ul class="experience">
+                <li class="experience-item">
+                  I was responsible for business development and sales.
+                </li>
+              </ul>
+        </section>
+        <section class="education" id="education">
+            <h2 class="education-title">Education</h2>
+            <h3 class="education-degree">Mgr. Electric: <span class="accent">NTUU(KPI), Kiev</span></h3>
+            <!-- <p class="education-time"></p> -->
+            <h3 class="education-degree">
+                Full Stack Developer,
+                <span class="accent">Udemy: The Web Developer Bootcamp</span>
+              </h3>
+              <h3 class="education-degree">
+                Developer JS,
+                <span class="accent">Udemy: The Complete JavaScript Course</span>
+              </h3>
+              <h3 class="education-degree">
+                CSS - The Complete Guide,
+                <span class="accent">Udemy: CSS, SASS</span>
+              </h3>  
+              <p class="education-time">2020 - 2021</p>
+        </section>
+        <section class="code"></section>
 
         <footer class="main-footer">
           <nav>
@@ -51,6 +226,15 @@
                     src="../assets/img/rsschool.jpg"
                     height="60px"
                     alt="rsschool_icon"
+                  />
+                </a>
+              </li>
+              <li class="main-footer__link">
+                <a href="https://www.codewars.com/users/googray" target="_blank">
+                  <img
+                    src="https://www.codewars.com/users/googray/badges/micro"
+                    height="20px"
+                    alt="codewars_icon"
                   />
                 </a>
               </li>
