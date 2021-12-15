@@ -6,36 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;500;700&display=swap" rel="stylesheet"> 
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css"
     />
+
+    <!-- <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/sunburst.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+	<script>hljs.initHighlightingOnLoad();</script> -->
+
+<link rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/highlight.min.js"></script>
+
+<script>hljs.initHighlightingOnLoad();</script>
+
     <title>CV-RSSchool</title>
     <link rel="icon" href="../assets/img/favicon-32x32.png" />
   </head>
   <body>
     <div class="container">
       <aside class="left-side">
-        <img src="../assets/img/photo.jpg" alt="Photo" />
+        <img src="../assets/img/photo.jpg" class='photo' alt="Photo" />
         <sections class="contacts" id="contacts">
           <h2 class="contacts-title">Contacts</h2>
-          <ul class="contact-list">
-            <li class="contact-item">
-              Phone:<a href="tel:+48 516 416 511" class="contacts-link"
+          <ul class="contacts-list">
+            <li class="contacts-item">
+              Phone: <a href="tel:+48 516 416 511" class="contacts-link"
                 >+48 516 416 511</a
               >
             </li>
-            <li class="contact-item">
-              E-mail:<a href="mailto:shat.rom07@gmail.com" class="contacts-link"
+            <li class="contacts-item">
+              E-mail: <a href="mailto:shat.rom07@gmail.com" class="contacts-link"
                 >shat.rom07@gmail.com</a
               >
             </li>
-            <li class="contact-item">
-              GitHub:<a href="https://github.com/googray" class="contacts-link"
+            <li class="contacts-item">
+              GitHub: <a href="https://github.com/googray" class="contacts-link"
                 >https://github.com/googray</a
               >
             </li>
@@ -45,11 +55,11 @@
           <h2 class="skills-title">Tech skills</h2>
           <h3 class="skills-title__info">Hard Skills</h3>
           <ul class="skills-list">
-            <li class="skills-item__techno">I'm use technologies as</li>
+            <li class="skills-item__techno">I use technologies as:</li>
             <li class="skills-item">HTML</li>
             <li class="skills-item">CSS / SCSS</li>
             <li class="skills-item">JavaScript</li>
-            <li class="skills-item">Bootstrap</li>
+            <li class="skills-item">React</li>
             <li class="skills-item">Git</li>
             <li class="skills-item">Figma</li>
           </ul>
@@ -97,22 +107,22 @@
                 <a href="#bio" class="header link">Summary</a>
               </li>
               <li class="main-footer__link">
-                <a href="#projects" class="header link"></a>Projects
+                <a href="#projects" class="header link">Projects</a>
               </li>
               <li class="main-footer__link">
-                <a href="#jobs" class="header link"></a>Jobs
+                <a href="#jobs" class="header link">Jobs</a>
               </li>
               <li class="main-footer__link">
-                <a href="#education" class="header link"></a>Education
+                <a href="#education" class="header link">Education</a>
               </li>
               <li class="main-footer__link">
-                <a href="#contacts" class="header link"></a>Contacts
+                <a href="#contacts" class="header link">Contacts</a>
               </li>
               <li class="main-footer__link">
-                <a href="#skills" class="header link"></a>Skills
+                <a href="#skills" class="header link">Skills</a>
               </li>
               <li class="main-footer__link">
-                <a href="#language" class="header link"></a>Languages
+                <a href="#language" class="header link">Languages</a>
               </li>
             </ul>
           </nav>
@@ -208,6 +218,18 @@
               <p class="education-time">2020 - 2021</p>
         </section>
         <section class="code"></section>
+        <h3 class="code-example">Example of code</h3>
+        <div class="code-container">
+            <pre>
+                <code class="code-js" id='code'>
+                    function deepCount(a){
+                        return a.reduce((acc, val) => {
+                        return acc + (Array.isArray(val) ? deepCount(val) : 0);
+                     }, a.length);
+                   }
+                </code>
+            </pre>
+        </div>
 
         <footer class="main-footer">
           <nav>
