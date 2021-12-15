@@ -196,10 +196,129 @@ html {
   justify-content: space-between;
 }
 
-/*Right side end*/
-
-/* body {
+.main-header__links {
   display: flex;
-  flex-direction: column;
   justify-content: space-between;
-} */
+  align-items: center;
+}
+
+.main-header__links {
+  list-style-type: none;
+  margin-top: 16px;
+}
+
+.header-link {
+  opacity: 0.8;
+  color: var(--color-title);
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.header-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+  background-color: var(--bgrc-body);
+}
+
+.bio,
+.projects,
+.jobs,
+.education,
+.code {
+  margin-bottom: 20px;
+}
+
+.bio-title {
+  font-size: 45px;
+  line-height: 2;
+  margin-bottom: 16px;
+}
+
+.bio-occupation {
+  font-size: 20px;
+  line-height: 1.714;
+}
+
+.bio-occupation {
+  margin-bottom: 16px;
+}
+
+.bio-title,
+.bio-occupation {
+  color: var(--color-title);
+}
+
+.bio-about {
+  font-size: 16px;
+  line-height: 1.714;
+}
+
+.bio-about {
+  color: var(--color-about);
+}
+
+.projects-title {
+  margin-bottom: 14px;
+  color: var(--color-title);
+  font-size: 22px;
+  line-height: 20px;
+}
+
+.projects-list,
+.experience {
+  padding-left: 36px;
+}
+
+.projects-link {
+  color: var(--color-project);
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.projects-link:hover {
+  color: var(--color-link);
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.jobs-title,
+.education-title {
+  color: var(--color-title);
+  font-size: 22px;
+  line-height: 1.091;
+}
+
+.jobs-occupation,
+.education-degree {
+  color: var(--color-title);
+  font-size: 16px;
+  line-height: 1.714;
+}
+
+.jobs-time,
+.education-time {
+  color: var(--color-time);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.experience-item {
+  color: var(--color-about);
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.accent {
+  color: var(--color-about);
+}
+
+.main-footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-footer__links {
+  list-style-type: none;
+}
+/*Right side end*/
