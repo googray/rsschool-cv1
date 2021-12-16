@@ -5,11 +5,6 @@
   padding: 0;
 }
 
-/* ul {
-  list-style: none;
-} */
-/*Reset part end*/
-
 :root {
   --bgrc-body: #f5f7fa;
   --bgrc-left-side: #1e2939;
@@ -23,13 +18,10 @@
 /*Variable part end*/
 /*Main part*/
 body {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between; */
   background-color: var(--bgrc-body);
-  padding: 30px;
-  width: 100%;
-  /* min-height: 100vh; */
+  padding: 20px;
+  /* width: 100%; */
+  min-height: 100vh;
   font-family: "Monserrat", Verdana, sans-serif;
 }
 
@@ -59,11 +51,11 @@ html {
 .skills,
 .languages,
 .hobbies {
-  margin-bottom: 36px;
+  margin-bottom: 20px;
   padding-left: 36px;
 }
 .widget {
-  margin-bottom: 36px;
+  margin-bottom: 20px;
 }
 
 .skills-title {
@@ -83,7 +75,7 @@ html {
 
 .photo {
   max-width: 70%;
-  margin: 25px 60px;
+  margin: 10% auto;
   border-radius: 7px;
 }
 
@@ -190,7 +182,6 @@ html {
   width: 69%;
   padding-left: 80px;
   padding-right: 150px;
-  padding-bottom: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -208,10 +199,11 @@ html {
 }
 
 .header-link {
+  position: relative;
   opacity: 0.8;
   color: var(--color-title);
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .header-link:hover {
@@ -231,7 +223,7 @@ html {
 .bio-title {
   font-size: 45px;
   line-height: 2;
-  margin-bottom: 16px;
+  margin-top: 16px;
 }
 
 .bio-occupation {
@@ -273,12 +265,14 @@ html {
   color: var(--color-project);
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
 }
 
 .projects-link:hover {
   color: var(--color-link);
   font-size: 18px;
   line-height: 20px;
+  text-decoration: underline;
 }
 
 .jobs-title,
@@ -322,3 +316,69 @@ html {
   list-style-type: none;
 }
 /*Right side end*/
+/*Media Queries part*/
+@media (max-width: 1000px) {
+  body {
+    max-width: 1260px;
+  }
+  .left-side {
+    width: 40%;
+    padding: 0 20px;
+  }
+  .right-side {
+    width: 60%;
+    padding: 0 20px;
+  }
+  .main-header__links {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  .left-side {
+    width: 40%;
+  }
+  .right-side {
+    width: 60%;
+  }
+  .contacts-title,
+  .skills-title,
+  .jobs-title,
+  .education-title,
+  .projects-title {
+    font-size: 20px;
+  }
+  .bio-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 639px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .code {
+    display: none;
+  }
+  .contacts-title,
+  .skills-title,
+  .jobs-title,
+  .education-title,
+  .projects-title {
+    font-size: 18px;
+  }
+  .bio-title {
+    font-size: 30px;
+  }
+}
+/*Media Queries end*/
