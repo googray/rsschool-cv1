@@ -1,0 +1,386 @@
+/*Reset part*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bgrc-body: #f5f7fa;
+  --bgrc-left-side: #1e2939;
+  --color-main: #fff;
+  --color-title: #2a2a2a;
+  --color-about: #595959;
+  --color-project: #220fdc;
+  --color-link: #ff6b08;
+  --color-time: #828282;
+}
+/*Variable part end*/
+/*Main part*/
+body {
+  background-color: var(--bgrc-body);
+  padding: 20px;
+  min-height: 100vh;
+  font-family: "Monserrat", Verdana, sans-serif;
+}
+
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--color-main);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/*Main part end*/
+
+/*Left side*/
+.left-side {
+  width: 31%;
+  background-color: var(--bgrc-left-side);
+  color: var(--color-main);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.contacts,
+.skills,
+.languages,
+.hobbies {
+  margin-bottom: 20px;
+  padding-left: 36px;
+}
+.widget {
+  margin-bottom: 20px;
+}
+
+.skills-title {
+  font-size: 22px;
+  line-height: 1.091;
+}
+
+.skills-title__info,
+.languages-title,
+.hobbies-title {
+  color: var(--color-main);
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 20px;
+}
+
+.photo {
+  max-width: 70%;
+  margin: 10% auto;
+  border-radius: 7px;
+}
+
+.skills-list,
+.languages-list,
+.hobbies-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills-item__techno {
+  list-style-type: none;
+}
+
+.skills-item,
+.languages-item,
+.hobbies-item {
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.skills-item__techno {
+  font-size: 18px;
+  line-height: 1.714;
+}
+
+.skills-item::before,
+.languages-item::before,
+.hobbies-item::before {
+  content: "\2022";
+  margin-right: 8px;
+  color: var(--color-link);
+  font-size: 18px;
+}
+
+.contacts-title,
+.skills-title {
+  color: var(--color-main);
+  font-family: Montserrat, Verdana, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.9;
+}
+
+.contacts-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.contacts-item {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  color: var(--color-main);
+}
+
+.contacts-link {
+  opacity: 0.6;
+  color: var(--color-main);
+  text-decoration: none;
+}
+
+.contacts-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.widget-link {
+  color: var(--color-main);
+  background-color: var(--color-link);
+  padding: 16px 43px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  border-radius: 3px;
+  box-shadow: 0px 8px 36px 0px rgba(255, 107, 8, 0.588);
+}
+
+.widget {
+  display: flex;
+  justify-content: center;
+  min-height: 40px;
+}
+
+.widget-link:hover {
+  box-shadow: 0px 8px 18px 0px #ff6b0896;
+}
+
+.widget-link:active {
+  box-shadow: inset 0px 2px 5px 0px #ff6b0896;
+}
+
+.photo:hover {
+  animation: swing 1s;
+  cursor: pointer;
+}
+
+.widget:hover {
+  animation: heartBeat 1s;
+}
+/*Left side end*/
+/*Right side*/
+.right-side {
+  width: 69%;
+  padding-left: 80px;
+  padding-right: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.main-header__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-header__links {
+  list-style-type: none;
+  margin-top: 16px;
+}
+
+.header-link {
+  position: relative;
+  opacity: 0.8;
+  color: var(--color-title);
+  text-decoration: none;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.header-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+  background-color: var(--bgrc-body);
+}
+
+.bio,
+.projects,
+.jobs,
+.education,
+.code {
+  margin-bottom: 20px;
+}
+
+.bio-title {
+  font-size: 45px;
+  line-height: 2;
+  margin-top: 16px;
+}
+
+.bio-occupation {
+  font-size: 20px;
+  line-height: 1.714;
+}
+
+.bio-occupation {
+  margin-bottom: 16px;
+}
+
+.bio-title,
+.bio-occupation {
+  color: var(--color-title);
+}
+
+.bio-about {
+  font-size: 16px;
+  line-height: 1.714;
+}
+
+.bio-about {
+  color: var(--color-about);
+}
+
+.projects-title {
+  margin-bottom: 14px;
+  color: var(--color-title);
+  font-size: 22px;
+  line-height: 20px;
+}
+
+.projects-list,
+.experience {
+  padding-left: 36px;
+}
+
+.projects-link {
+  color: var(--color-project);
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  transition: color 0.5s;
+}
+
+.projects-link:hover {
+  color: var(--color-link);
+  font-size: 18px;
+  line-height: 20px;
+  text-decoration: underline;
+}
+
+.jobs-title,
+.education-title {
+  color: var(--color-title);
+  font-size: 22px;
+  line-height: 1.091;
+}
+
+.jobs-occupation,
+.education-degree {
+  color: var(--color-title);
+  font-size: 16px;
+  line-height: 1.714;
+}
+
+.jobs-time,
+.education-time {
+  color: var(--color-time);
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.experience-item {
+  color: var(--color-about);
+  font-size: 14px;
+  line-height: 1.714;
+}
+
+.accent {
+  color: var(--color-about);
+}
+
+.main-footer__links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-footer__links {
+  list-style-type: none;
+}
+/*Right side end*/
+/*Media Queries part*/
+@media (max-width: 1000px) {
+  body {
+    max-width: 1260px;
+  }
+  .left-side {
+    width: 40%;
+    padding: 0 20px;
+  }
+  .right-side {
+    width: 60%;
+    padding: 0 20px;
+  }
+  .main-header__links {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
+  .left-side {
+    width: 40%;
+  }
+  .right-side {
+    width: 60%;
+  }
+  .contacts-title,
+  .skills-title,
+  .jobs-title,
+  .education-title,
+  .projects-title {
+    font-size: 20px;
+  }
+  .bio-title {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 639px) {
+  .container {
+    flex-direction: column;
+  }
+  .left-side,
+  .right-side {
+    width: 100%;
+  }
+}
+
+@media (max-width: 420px) {
+  .code {
+    display: none;
+  }
+  .contacts-title,
+  .skills-title,
+  .jobs-title,
+  .education-title,
+  .projects-title {
+    font-size: 18px;
+  }
+  .bio-title {
+    font-size: 30px;
+  }
+}
+/*Media Queries end*/
