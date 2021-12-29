@@ -9,8 +9,7 @@
   menuCloseItem.addEventListener("click", () => {
     menuItem.classList.remove("header-nav__active");
   });
-
-  if (window.innerWidth <= 830) {
+  if (window.innerWidth <= 829) {
     for (let i = 0; i < useLink.length; i++) {
       useLink[i].addEventListener("click", () => {
         menuItem.classList.remove("header-nav__active");

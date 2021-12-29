@@ -377,7 +377,7 @@ html {
 
   .header-nav {
     width: 50%;
-    height: 50%;
+    height: 70%;
     position: fixed;
     top: 0;
     left: 0;
@@ -385,7 +385,7 @@ html {
     z-index: 10;
     padding: 65px;
     transform: translateX(-100%);
-    /* transition: 0.1s all linear; */
+    transition: 0.1s all linear;
   }
 
   .header-nav__active {
@@ -410,8 +410,8 @@ html {
   .header-link {
     opacity: 1;
     color: #fff;
-    font-size: 28px;
-    line-height: 42px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .header-nav__close {
@@ -473,7 +473,7 @@ html {
 
   .header-link {
     font-size: 20px;
-    line-height: 36px;
+    line-height: 28px;
   }
 }
 
@@ -493,8 +493,8 @@ html {
   }
 
   .header-link {
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 14px;
+    line-height: 20px;
   }
 }
 /*Media Queries end*/
