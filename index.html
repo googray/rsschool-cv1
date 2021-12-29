@@ -25,6 +25,11 @@
   <body>
     <div class="container">
       <aside class="left-side">
+        <div class="header-burger burger">
+          <span class="burger-line burger-line__first"></span>
+          <span class="burger-line burger-line__second"></span>
+          <span class="burger-line burger-line__third"></span>
+        </div>
         <img src="./assets/img/photo.jpg" class='photo' alt="Photo" />
         <sections class="contacts" id="contacts">
           <h2 class="contacts-title">Contacts</h2>
@@ -96,31 +101,36 @@
       </aside>
       <main class="right-side">
         <header class="main-header">
-          <nav>
+          <nav class="header-nav">
             <ul class="main-header__links">
-              <li class="main-footer__link">
+              <li class="main-header__link">
                 <a href="#bio" class="header-link">Summary</a>
               </li>
-              <li class="main-footer__link">
+              <li class="main-header__link">
                 <a href="#projects" class="header-link">Projects</a>
               </li>
-              <li class="main-footer__link">
+              <li class="main-header__link">
                 <a href="#jobs" class="header-link">Jobs</a>
               </li>
-              <li class="main-footer__link">
+              <li class="main-header__link">
                 <a href="#education" class="header-link">Education</a>
               </li>
-              <li class="main-footer__link">
+              <li class="main-header__link">
                 <a href="#contacts" class="header-link">Contacts</a>
               </li>
-              <li class="main-footer__link">
+              <li class="main-header__link">
                 <a href="#skills" class="header-link">Skills</a>
               </li>
-              <li class="main-footer__link">
+              <li class="main-header__link">
                 <a href="#language" class="header-link">Languages</a>
               </li>
             </ul>
+            <div class="header-nav__close">
+              <span class="header-nav__close-line"></span>
+              <span class="header-nav__close-line"></span>
+            </div>
           </nav>
+
         </header>
         <section class="bio" id="bio">
           <h1 class="bio-title">Roman Shatrov</h1>
@@ -262,5 +272,6 @@
         </footer>
       </main>
     </div>
+    <script src="./app.js"></script>
   </body>
 </html>
